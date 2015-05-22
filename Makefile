@@ -9,7 +9,7 @@ TESTS := test
 
 test_SRCS := test.cpp
 test_OBJS := $(test_SRCS:%.cpp=%.o)
-LDFLAGS ?= -L /usr/local/lib -lboost_unit_test_framework-mt
+LDFLAGS ?= -L /usr/local/lib -lboost_unit_test_framework
 
 CPPFLAGS = -I /usr/local/include
 CXXFLAGS = -g -Wall --std=c++14
