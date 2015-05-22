@@ -102,10 +102,4 @@ Vector2d operator*(const Vector2d::type lhs, const Vector2d& rhs) {
   return result *= lhs;
 }
 
-auto v = Vector2d{2,3,4};
-auto u = Vector2d::buildWithAngleAndMagnitude(M_PI, 1);
-void f() {
-  auto w = 3 * (u + v) * 8;
-}
-
 } // namespace poly
