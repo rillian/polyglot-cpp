@@ -2,3 +2,8 @@
 *.dSYM
 main
 test
+array
+even
+exception
+fib
+hello
