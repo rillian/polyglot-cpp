@@ -19,8 +19,12 @@ int main() {
 
   std::cout << w.magnitudeSquared() << std::endl;
 
-  poly::Circle c = poly::Circle(poly::Vector2d{100,200}, 75);
-  poly::Rectangle r = poly::Rectangle(poly::Vector2d{50,50}, poly::Vector2d{100,100});
+  auto center = poly::Vector2d{100,200};
+  poly::Circle c = poly::Circle(center, 75);
+
+  auto origin = poly::Vector2d{50,50};
+  auto size = poly::Vector2d{100,100};
+  auto r = poly::Rectangle(origin, size);
 
   return 0;
 }
