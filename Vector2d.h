@@ -57,9 +57,9 @@ class Vector2d {
     }
 
     // operators
-    Vector2d& operator+=(const Vector2d& lhs) {
-      _x += lhs._x;
-      _y += lhs._y;
+    Vector2d& operator+=(const Vector2d& rhs) {
+      _x += rhs._x;
+      _y += rhs._y;
       return *this;
     }
 
