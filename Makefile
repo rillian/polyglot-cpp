@@ -4,13 +4,17 @@ CXXFLAGS = -g -Wall --std=c++14
 
 main_SRCS := main.cpp Circle.cpp Rectangle.cpp
 
-TESTS := test exception
+TESTS := test array even exception fib hello
 
 test_SRCS := test.cpp test_circle.cpp Circle.cpp
 test_CPPFLAGS := -I /usr/local/include
 test_LDFLAGS := -L /usr/local/lib -lboost_unit_test_framework
 
+array_SRCS := array.cpp
+even_SRCS := even.cpp
 exception_SRCS := exception.cpp
+fib_SRCS := fib.cpp
+hello_SRCS := hello.cpp
 
 
 ## below this point is generic code
