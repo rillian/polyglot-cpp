@@ -69,6 +69,12 @@ class Vector2d {
       return *this;
     }
 
+    Vector2d& operator*=(const type rhs) {
+      _x *= rhs;
+      _y *= rhs;
+      return *this;
+    }
+
   private:
     type _x = 0;
     type _y = 0;
@@ -87,16 +93,12 @@ Vector2d operator-(const Vector2d& lhs, const Vector2d& rhs) {
 
 Vector2d operator*(const Vector2d& lhs, const Vector2d::type rhs) {
   auto result = lhs;
-  result.setX(lhs.x() * rhs);
-  result.setY(lhs.y() * rhs);
-  return result;
+  return result *= rhs;
 }
 
 Vector2d operator*(const Vector2d::type lhs, const Vector2d& rhs) {
   auto result = rhs;
-  result.setX(lhs * rhs.x());
-  result.setY(lhs * rhs.y());
-  return result;
+  return result *= lhs;
 }
 
 auto v = Vector2d{2,3,4};
