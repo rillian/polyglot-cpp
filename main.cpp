@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdint>
+#include "Vector2d.h"
 
 int main() {
   auto a = 1;
