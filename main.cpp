@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdint>
 #include "Vector2d.h"
+#include "Shape.h"
 
 namespace poly {
 
