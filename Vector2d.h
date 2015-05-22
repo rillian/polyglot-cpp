@@ -70,7 +70,8 @@ class Vector2d {
 
 // Free function for binary operators.
 Vector2d operator+(const Vector2d& lhs, const Vector2d& rhs) {
-  return Vector2d{lhs.x() + rhs.x(), lhs.y() + rhs.y()};
+  auto result = lhs;
+  return result += rhs;
 }
 
 auto v = Vector2d{2,3,4};
