@@ -57,6 +57,10 @@ class Vector2d {
       _y = y;
     }
 
+    auto magnitudeSquared() {
+      return _x*_x + _y*_y;
+    }
+
     // operators
     Vector2d& operator+=(const Vector2d& rhs) {
       _x += rhs._x;
