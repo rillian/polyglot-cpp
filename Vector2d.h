@@ -40,6 +40,10 @@ class Vector2d {
 
     // accessors
 
+    auto x() const {
+      return _x;
+    }
+
     // operators
 
   private:
@@ -51,6 +55,7 @@ auto v = Vector2d{2,3,4};
 auto u = Vector2d::buildWithAngleAndMagnitude(M_PI, 1);
 void f() {
   u = v;
+  u.x();
 }
 
 } // namespace poly
