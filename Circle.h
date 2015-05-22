@@ -7,7 +7,7 @@ namespace poly {
 class Circle : public Shape {
   public:
     Circle() = default;
-    Circle(Vector2d& center, Vector2d::type r);
+    Circle(const Vector2d& center, Vector2d::type r);
     void draw() override;
     bool hitTest(const Vector2d& point) const override;
     ~Circle() = default;

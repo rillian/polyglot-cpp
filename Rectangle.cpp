@@ -2,7 +2,7 @@
 
 namespace poly {
 
-Rectangle::Rectangle(Vector2d& top_left, Vector2d& size) {
+Rectangle::Rectangle(const Vector2d& top_left, const Vector2d& size) {
   _top_left = top_left;
   _size = size;
 }

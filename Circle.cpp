@@ -2,7 +2,7 @@
 
 namespace poly {
 
-Circle::Circle(Vector2d& center, Vector2d::type radius) {
+Circle::Circle(const Vector2d& center, Vector2d::type radius) {
   _center = center;
   _radius = radius;
 }
