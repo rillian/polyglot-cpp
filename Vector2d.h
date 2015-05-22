@@ -9,6 +9,7 @@ class Vector2d {
   public:
     using type = double; // type alias, typedef that works with templates.
 
+  public:
     // ctors
     Vector2d() = default; // explicit default for consistency.
     Vector2d(type x, type y) : _x(x), _y(y) {}
