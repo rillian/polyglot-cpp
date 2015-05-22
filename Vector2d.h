@@ -86,21 +86,25 @@ class Vector2d {
 };
 
 // Free function for binary operators.
+inline
 Vector2d operator+(const Vector2d& lhs, const Vector2d& rhs) {
   auto result = lhs;
   return result += rhs;
 }
 
+inline
 Vector2d operator-(const Vector2d& lhs, const Vector2d& rhs) {
   auto result = lhs;
   return result -= rhs;
 }
 
+inline
 Vector2d operator*(const Vector2d& lhs, const Vector2d::type rhs) {
   auto result = lhs;
   return result *= rhs;
 }
 
+inline
 Vector2d operator*(const Vector2d::type lhs, const Vector2d& rhs) {
   auto result = rhs;
   return result *= lhs;
