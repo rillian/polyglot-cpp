@@ -44,7 +44,24 @@ class Vector2d {
       return _x;
     }
 
+    auto y() const {
+      return _y;
+    }
+
+    auto setX(type x) {
+      _x = x;
+    }
+
+    auto setY(type y) {
+      _y = y;
+    }
+
     // operators
+    Vector2d& operator+=(const Vector2d& lhs) {
+      _x += lhs._x;
+      _y += lhs._y;
+      return *this;
+    }
 
   private:
     type _x = 0;
