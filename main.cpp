@@ -2,6 +2,7 @@
 #include <cstdint>
 #include "Vector2d.h"
 #include "Shape.h"
+#include "Circle.h"
 
 namespace poly {
 
