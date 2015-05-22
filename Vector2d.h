@@ -68,6 +68,11 @@ class Vector2d {
     type _y = 0;
 };
 
+// Free function for binary operators.
+Vector2d operator+(const Vector2d& lhs, const Vector2d& rhs) {
+  return Vector2d{lhs.x() + rhs.x(), lhs.y() + rhs.y()};
+}
+
 auto v = Vector2d{2,3,4};
 auto u = Vector2d::buildWithAngleAndMagnitude(M_PI, 1);
 void f() {
